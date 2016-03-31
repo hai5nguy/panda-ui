@@ -22,6 +22,7 @@ module.exports = {
       test: /\.js$/,
       loader: 'babel',
       query: {
+        plugins: [ 'transform-runtime', 'transform-decorators-legacy' ],
         presets: ["es2015", "stage-1", "react"]
       },
       include: [
